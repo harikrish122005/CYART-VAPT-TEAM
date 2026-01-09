@@ -1,5 +1,5 @@
 # Capstone Project – Web Application VAPT (DVWA)
-Objective
+## Objective
 
 To perform a complete Web Application Vulnerability Assessment and Penetration Test (VAPT) against a deliberately vulnerable application in a controlled lab environment, following standard penetration testing methodology.
 
@@ -50,11 +50,12 @@ Retrieval of usernames and corresponding password hashes
 
 This demonstrates a high-risk data exposure scenario, which could lead to unauthorized access, credential reuse attacks, and complete compromise of the application.
 
-Evidence (sqlmap Output)
+### Evidence
+```
 sqlmap -u "http://10.48.143.180/vulnerabilities/sqli/?id=1&Submit=Submit" \
 --cookie="security=low; PHPSESSID=6f40tga2903lg13e1jrqj2s00" \
 -D dvwa -T users --dump
-
+```
 
 Injection Point Identified:
 
