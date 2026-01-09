@@ -70,7 +70,7 @@ OS: Linux Ubuntu
 Extracted Table: dvwa.users
 
 | user_id | user    | avatar                      | password                                    |
--------------------------------------------------------------------------------------------------
+|---------|---------|-----------------------------|---------------------------------------------|
 | 1       | admin   | /hackable/users/admin.jpg   | 5f4dcc3b5aa765d61d8327deb882cf99 (password) |
 | 2       | gordonb | /hackable/users/gordonb.jpg | e99a18c428cb38d5f260853678922e03 (abc123)   |
 | 3       | 1337    | /hackable/users/1337.jpg    | 8d3533d75ae2c3966d7e0d4fcc69216b (charley)  |
