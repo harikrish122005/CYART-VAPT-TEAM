@@ -3,7 +3,7 @@
 
 To perform a complete Web Application Vulnerability Assessment and Penetration Test (VAPT) against a deliberately vulnerable application in a controlled lab environment, following standard penetration testing methodology.
 
-Target Environment
+### Target Environment
 
 Application: Damn Vulnerable Web Application (DVWA)
 
@@ -17,11 +17,11 @@ Operating System: Linux Ubuntu
 
 Testing Platform: Kali Linux
 
-Vulnerability Identified
+### Vulnerability Identified
 
 The application was found vulnerable to SQL Injection due to improper input validation and the absence of parameterized SQL queries on the id parameter within the SQL Injection module.
 
-Exploitation
+### Exploitation
 
 The identified SQL Injection vulnerability was successfully exploited using sqlmap by replaying an authenticated session cookie.
 During exploitation, sqlmap automatically detected and confirmed multiple SQL injection techniques, including:
@@ -36,7 +36,7 @@ UNION-based SQL Injection
 
 This confirmed that the application backend was fully injectable and vulnerable.
 
-Impact
+### Impact
 
 Successful exploitation enabled:
 
@@ -57,7 +57,7 @@ sqlmap -u "http://10.48.143.180/vulnerabilities/sqli/?id=1&Submit=Submit" \
 -D dvwa -T users --dump
 ```
 
-Injection Point Identified:
+### Injection Point Identified:
 
 Parameter: id (GET)
 
@@ -77,7 +77,7 @@ Extracted Table: dvwa.users
 | 4       | pablo   | /hackable/users/pablo.jpg   | 0d107d09f5bbe40cade3de5c71e9e9b7 (letmein)  |
 | 5       | smithy  | /hackable/users/smithy.jpg  | 5f4dcc3b5aa765d61d8327deb882cf99 (password) |
 
-Remediation Recommendations
+### Remediation Recommendations
 
 Implement prepared statements (parameterized queries)
 
@@ -89,10 +89,10 @@ Enable Web Application Firewall (WAF) protection
 
 Increase application security level and conduct regular security testing
 
-Non-Technical Summary
+### Non-Technical Summary
 
 The security assessment identified a critical vulnerability that allows attackers to access sensitive information stored in the application database. By exploiting improper input handling, an attacker can retrieve usernames and passwords without authorization. This type of vulnerability poses serious risks, including data breaches and system compromise. Applying secure coding practices and regular security testing will significantly reduce these risks and strengthen the application’s overall security posture.
 
-Conclusion
+### Conclusion
 
 This capstone project successfully demonstrates a full VAPT cycle, including vulnerability identification, exploitation, evidence collection, impact analysis, and remediation planning. The exercise highlights the importance of secure development practices and proactive security assessments.
