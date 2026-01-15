@@ -36,6 +36,7 @@ A custom header was manually injected into the request to demonstrate active man
 This confirms the ability to intercept and modify live HTTP traffic before forwarding it to the server.
 
 **Evidence:** `burp manual testing.png`
+<img width="1920" height="1080" alt="burp manual testing" src="https://github.com/user-attachments/assets/fabe225a-2c54-4654-a415-9bcb0a01fdc2" />
 
 ---
 
@@ -56,6 +57,7 @@ Captured responses were analyzed using Burp Suite’s HTTP history feature.
 The presence of session cookies and security-level cookies confirms active session handling by the application and highlights areas for session management review.
 
 **Evidence:** `http history.png`
+<img width="1920" height="1080" alt="http history" src="https://github.com/user-attachments/assets/8ddaa3d4-bfa9-4235-a392-0a4c1a7e4ee7" />
 
 ---
 
