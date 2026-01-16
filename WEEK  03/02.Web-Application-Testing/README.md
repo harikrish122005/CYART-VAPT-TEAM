@@ -81,6 +81,3 @@ This activity aligns with:
 The Burp Suite manual testing phase successfully demonstrated interception, inspection, and modification of HTTP requests and responses. Session cookies, headers, and authentication flows were analyzed, fulfilling the manual testing requirements of the web application penetration testing task.
 
 ---
-
-## Disclaimer
-All actions documented in this report were conducted in a controlled and authorized lab environment for educational and assessment purposes only.
