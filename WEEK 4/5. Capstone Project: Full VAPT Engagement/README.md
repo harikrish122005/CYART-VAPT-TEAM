@@ -65,7 +65,8 @@ Windows system files were successfully accessed using crafted directory traversa
 
 **Example Payload:**
 
-![LFI Success](images/1.png)
+<img width="1918" height="309" alt="1" src="https://github.com/user-attachments/assets/d88fd15f-0058-4698-94ef-cc95357bac81" />
+
 
 ---
 
@@ -73,7 +74,8 @@ Windows system files were successfully accessed using crafted directory traversa
 
 Using Responder, SMB authentication traffic was intercepted, resulting in NTLMv2 hash capture.
 
-![NTLM Hash Captured](images/hash.png)
+<img width="991" height="211" alt="hash" src="https://github.com/user-attachments/assets/8b15dbc0-4c2c-4108-9a39-1bc2ccdc238f" />
+
 
 ---
 
@@ -86,7 +88,8 @@ The captured NTLMv2 hash was cracked using John the Ripper.
 **Recovered Credentials:**
 
 
-![Hash Cracked](images/hash%20cracked.png)
+<img width="816" height="186" alt="hash cracked" src="https://github.com/user-attachments/assets/741cb891-9901-46b6-b0d6-edb0413f55f0" />
+
 
 ---
 
@@ -94,7 +97,8 @@ The captured NTLMv2 hash was cracked using John the Ripper.
 
 Administrative access was obtained using Evil-WinRM with the recovered credentials.
 
-![Remote Shell Access](images/entered%20shell.png)
+<img width="940" height="419" alt="entered shell" src="https://github.com/user-attachments/assets/7ddff26b-f5e4-40ce-83f1-98f5ebf9cf00" />
+
 
 ---
 
