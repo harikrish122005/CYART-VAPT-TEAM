@@ -104,9 +104,3 @@ The vulnerability presents a high-risk condition due to the possibility of arbit
   - Screenshots and references  
 
 ---
-
-## Closing Notes
-
-This week established a foundational understanding of VAPT workflows, tooling, and reporting standards. The focus was on methodical assessment, accurate risk evaluation, and professional documentation rather than exploitation depth.
-
-Subsequent weeks build upon this foundation with deeper attack chains, manual exploitation, and advanced vulnerability validation techniques.
